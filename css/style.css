@@ -1,0 +1,383 @@
+body{
+    width: 100%;
+    max-width: 1140px;
+    min-width: 748px;
+    margin: 0 auto;
+    background: #eeeeee;
+
+}
+header{
+
+}
+.header__logo{
+	margin-top: 48px;
+}
+
+.header__logo a{
+	width: 272px;
+	height: 36px;
+	color: #303030;
+	font-family: Roboto;
+	font-size: 48px;
+	font-weight: 900;
+	
+}
+
+.header__nav{
+	float: right;
+	display: inline-block;
+	margin-top: -50px;
+}
+
+.header__nav ul li a{
+	width: 299px;
+	height: 14px;
+	color: #303030;
+	font-family: Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.header__nav ul li a:hover{
+	color: red;
+}
+
+.header__nav ul li{
+	display: inline-block;
+	margin: 0 30px;
+}
+a{
+	text-decoration: none;
+}
+/* Меню */
+
+.nav_menu{
+	border-bottom: 8px double black;
+    border-top: 3px solid black;
+    content: "";
+    height: 8px;
+    width: 21px;
+    padding: 2px;
+}
+
+
+
+/* Слайдер */
+.slider-hover{
+	margin-top: 124px;
+}
+
+.slider {
+	position:relative;
+	width: 100%;
+	padding-top:500px;
+	text-align:center;
+}
+.slider__check {
+		position:absolute;
+		clip:rect(0 0 0 0);
+		overflow:hidden;
+}
+.slider__image {
+		position:absolute;
+		top:0;
+		left:0;
+		}
+.slider__label {
+		overflow:hidden;
+		display:inline-block;
+		width:11px;
+		height:11px;
+		background:#303030;
+		border-radius:50%;
+		text-indent:-9999px;
+		cursor: pointer;
+}
+
+.slider__image {
+	display:none;
+	float: right;
+	}
+.slider__check:checked + .slider__label + .slider__image {
+	display:block;
+	margin-left: 67%;
+	}
+
+.slider__check:checked + .slider__label {
+	background:#C00;
+	}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+.slider__text{
+	float: right;
+    margin-right: 480px;
+    text-align: right;
+}
+
+.slider__text a{
+	color: #e10011;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.slider__text a:hover{
+	color: black;
+	border-bottom: 2px solid #e10011;
+}
+
+h2{
+height: 258px;
+color: #303030;
+font-family: Raleway;
+font-size: 150px;
+font-weight: 900;
+line-height: 150px;
+text-transform: uppercase;
+margin: auto;
+
+}
+
+.slider__text p{
+height: 95px;
+color: #303030;
+font-family: Roboto;
+font-size: 24px;
+font-weight: 300;
+line-height: 36px;
+margin-top: 54px;
+}
+
+/* main */
+.main{
+	background-color: #fff;
+    position: relative;
+    top: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #303030;
+    font-family: 'Raleway', sans-serif;
+}
+.main__title{
+	font-size: 48px;
+	font-weight: 900;
+	position: relative;
+	margin-bottom: 7px;
+}
+.main__text{
+	font-size: 18px;
+	width: 550px;
+	margin: 7px auto;
+}
+.main-content{
+	margin-top: 50px;
+}
+.main-work{
+	height: 387px;
+	margin-right: 30px;
+	margin-bottom: 15px;
+	position: relative;
+	display: inline-block;
+}
+.main-work:nth-child(1){
+	width: 56.7%;
+}
+.main-work:nth-child(2),
+.main-work:nth-child(3),
+.main-work:nth-child(4),
+.main-work:nth-child(5){
+	width: 27%;
+}
+.main-work__img{
+	height: 100%;
+}
+.main-work:nth-child(1) > .main-work__img{
+	background: url("../img/speaker-pill-white-standard-thrqrtleft.png") #eee;
+}
+.main-work:nth-child(2) > .main-work__img{
+	background: url("../img/beats-by-dre-studio-red-highdefinition-headphones.png") right top no-repeat #eee;
+}
+.main-work:nth-child(3) > .main-work__img{
+	background: url("../img/minimal-product.png") right no-repeat #eee;
+}
+.main-work:nth-child(4) > .main-work__img{
+	background: url("../img/casual-shoes-for-men-2.png") no-repeat #eee;
+}
+.main-work:nth-child(5) > .main-work__img{
+	background: url("../img/tumblr-nko8p7po0t1qddxjwo3-1280.png") #eee;
+}
+.main-work__overlay{
+	background-color: #E00008;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+	text-align: left;
+	padding-left: 17%;
+	padding-top: 70%;
+}
+.main-work:first-child .main-work__overlay,
+.main-work:last-child .main-work__overlay{
+	padding-left: 0;
+	text-align: center;
+}
+.main-work:first-child .main-work__overlay{
+	padding-top: 34%;
+}
+.main-work:hover .main-work__overlay{
+	visibility: visible;
+}
+.main-work__title{
+	font-family: 'Roboto', sans-serif;
+	color:  #fff;
+	font-size: 30px;
+	border-bottom: 4px solid #fff;
+	line-height: 60px;
+	display: inline;
+	padding-bottom: 6px;
+}
+
+/* Футер */
+
+.footer{
+	font-family: 'Raleway', sans-serif;
+	color:  #303030;
+	position: relative;
+	top: 175px;
+}
+
+.footer-text{
+	font-size: 18px;
+	width: 530px;
+	text-align: center;
+	position: relative;
+	margin: auto;
+}
+.footer-text__title{
+	font-size: 48px;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0;
+}
+.footer-form{
+	position: relative;
+	margin: auto;
+	top: 15px;
+	width: 705px;
+}
+.input-style{
+	height: 70px;
+	outline: none;
+	border: none;
+	font-size: 18px;
+}
+.footer-form__input{
+	width: 494px;
+	padding-left: 70px;
+	background: url(../assets/mail.png) 31px 28px no-repeat #fff;
+	color:  #979797;
+	font-weight: 600;
+	font-style: italic;
+	border-radius: 50px 0 0 50px;
+}
+.footer-form__submit{
+	width: 208px;
+	background-color: #e10011;
+	font-family: 'Roboto', sans-serif;
+	color:  #fff;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-left: -5px;
+	border-radius: 0 50px 50px 0;
+}
+.footer-form__triangle{
+	display: inline-block;
+	border: 6px solid transparent;
+	border-left: 6px solid #fff;
+	margin-bottom: 1px;
+}
+.footer-social{
+	position: relative;
+	margin: auto;
+	top: 100px;
+	width: 480px;
+}
+.footer-social__links{
+	margin-left: 75px;
+}
+.footer-social__links a{
+	margin-right: 15px;
+}
+.footer-social__links a img:hover{
+	box-shadow: 0 0 10px 5px #e10011;
+	transform: scale(1.1);
+	border-radius: 50%;
+}
+.footer-social__info{
+	color:  #979797;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+.footer-social__info span{
+	color:  #303030;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
